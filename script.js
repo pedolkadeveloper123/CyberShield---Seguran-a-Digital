@@ -25,7 +25,13 @@ function generateStatisticsData() {
     labels: ['Segurança', 'Malware', 'Intrusões', 'Atividades suspeitas', 'Ataques'],
     datasets: [{
       label: 'Dados de Segurança',
-      data: [Math.random() * 100, Math.random() * 100, Math.random() * 100, Math.random() * 100, Math.random() * 100],
+      data: [
+        Math.floor(Math.random() * 100), // Dados aleatórios entre 0 e 100
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100),
+        Math.floor(Math.random() * 100)
+      ],
       backgroundColor: ['#38b2ac', '#f56565', '#e53e3e', '#ed8936', '#3182ce'],
       borderColor: '#fff',
       borderWidth: 2
@@ -49,7 +55,7 @@ function createChart() {
     });
 }
 
-// Atualiza o status de segurança e o gráfico a cada 5 segundos
+// Função para atualizar o app (chama funções de status e gráfico)
 function updateApp() {
   updateSecurityStatus();
   createChart();
