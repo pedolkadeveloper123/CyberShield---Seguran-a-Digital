@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Cibersegurança</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Aplicativo de Cibersegurança</h1>
+    </header>
+
+    <main>
+      <div class="dashboard">
+        <div class="security-status">
+          <h2>Status de Segurança</h2>
+          <p id="securityStatus">Verificando...</p>
+        </div>
+
+        <div class="statistics">
+          <h2>Estatísticas</h2>
+          <canvas id="statsChart" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cibersegurança App</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
